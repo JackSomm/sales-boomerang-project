@@ -48,7 +48,8 @@ export default class App extends React.Component {
     return (
       <div className="App">
         {this.state.favoriteColor ? (
-          <div className="favorite-color" 
+          <div className={(this.state.favoriteColor.color === "yellow") ?
+                          "favorite-color yellow" : "favorite-color"}
                 style={{ backgroundColor: this.state.favoriteColor.hexcode }}>
             <h2>Your favorite color is { this.state.favoriteColor.color }!</h2>
           </div>
@@ -56,7 +57,7 @@ export default class App extends React.Component {
 
         <h1>Select a color!</h1>
 
-        <ul class="colors">
+        <ul className="colors">
           {this.state.colors.map((color) => (
             <li className="colors__color"
                 id={color.id} 
