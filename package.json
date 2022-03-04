@@ -1,0 +1,19 @@
+{
+    "name": "sales-boomerang-project",
+    "version": "1.0.0",
+    "description": "Coding Assessment for Sales Boomerang",
+    "scripts": {
+        "server": "node ./server/app.js",
+        "client": "npm start --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "build:client": "cd client && npm i",
+        "build:server": "cd server && npm i",
+        "build": "concurrently \"npm run build:client\" \"npm run build:server\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "concurrently": "^7.0.0"
+    }
+}

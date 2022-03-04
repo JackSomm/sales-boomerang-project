@@ -1,0 +1,8 @@
+{
+  "short_name": "Sale Boomerang Project",
+  "name": "Sales Boomerang Coding Assessment Project",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
