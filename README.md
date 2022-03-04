@@ -10,7 +10,7 @@ Running those scripts will create the table and insert all the necessary colors.
 The MySQL credentials can be set in /server/db.config.js. At the moment the password is gibberish.
 
 ## Initialize App
-To install the dependencies:
+To install the dependencies be in the root directory and:
 1. run ```npm i```
 2. run ```npm build```
 
